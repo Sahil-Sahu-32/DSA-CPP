@@ -1,1 +1,1 @@
-This Repositorie contains containt regarding C++ language
+This Repositorie contains containt regarding C++ language.
