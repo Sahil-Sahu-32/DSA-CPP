@@ -49,4 +49,4 @@ int main()
          << longestConsecutive(arr, n);
 
     return 0;
-}
+} 
