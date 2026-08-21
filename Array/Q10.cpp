@@ -27,3 +27,28 @@ int countEqual01(vector<int>& arr) {
         // Same prefix sum means
         // equal number of 0s and 1s
         if (freq.find(sum) != freq.end()) {
+
+            answer += freq[sum];
+        }
+
+        freq[sum]++;
+    }
+
+    return answer;
+}
+
+int main() {
+
+    vector<int> arr = {
+        0, 1, 0, 1
+    };
+
+    int result =
+        countEqual01(arr);
+
+    cout << "Number of subarrays with "
+         << "equal 0s and 1s = "
+         << result << endl;
+
+    return 0;
+}
