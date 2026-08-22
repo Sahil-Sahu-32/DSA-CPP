@@ -17,3 +17,23 @@ int maxProduct(int arr[], int n)
         {
             swap(currentMax, currentMin);
         }
+
+        currentMax = max(arr[i], currentMax * arr[i]);
+        currentMin = min(arr[i], currentMin * arr[i]);
+
+        answer = max(answer, currentMax);
+    }
+
+    return answer;
+}
+
+int main()
+{
+    int arr[] = {2, 3, -2, 4};
+    int n = 4;
+
+    cout << "Maximum product = "
+         << maxProduct(arr, n);
+
+    return 0;
+}
