@@ -25,3 +25,14 @@ int findDuplicate(int arr[], int n)
 
     return slow;
 }
+
+int main()
+{
+    int arr[] = {1, 3, 4, 2, 2};
+    int n = 5;
+
+    cout << "Duplicate number = "
+         << findDuplicate(arr, n);
+
+    return 0;
+}
