@@ -14,4 +14,14 @@ int findDuplicate(int arr[], int n)
 
     } while (slow != fast);
 
- 
+    // Step 2: Find entrance of cycle
+    slow = arr[0];
+
+    while (slow != fast)
+    {
+        slow = arr[slow];
+        fast = arr[fast];
+    }
+
+    return slow;
+}
