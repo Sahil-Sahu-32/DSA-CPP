@@ -26,3 +26,20 @@ int trapWater(int arr[], int n)
 
             left++;
         }
+        else
+        {
+            if (arr[right] >= rightMax)
+            {
+                rightMax = arr[right];
+            }
+            else
+            {
+                water += rightMax - arr[right];
+            }
+
+            right--;
+        }
+    }
+
+    return water;
+}
