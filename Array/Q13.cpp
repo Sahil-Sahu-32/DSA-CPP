@@ -43,3 +43,14 @@ int trapWater(int arr[], int n)
 
     return water;
 }
+
+int main()
+{
+    int arr[] = {4, 2, 0, 3, 2, 5};
+    int n = 6;
+
+    cout << "Trapped water = "
+         << trapWater(arr, n);
+
+    return 0;
+}
