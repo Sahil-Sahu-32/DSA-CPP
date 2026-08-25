@@ -11,3 +11,18 @@ int trapWater(int arr[], int n)
     int rightMax = 0;
 
     int water = 0;
+ while (left < right)
+    {
+        if (arr[left] <= arr[right])
+        {
+            if (arr[left] >= leftMax)
+            {
+                leftMax = arr[left];
+            }
+            else
+            {
+                water += leftMax - arr[left];
+            }
+
+            left++;
+        }
