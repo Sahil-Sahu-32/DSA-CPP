@@ -39,3 +39,16 @@ int longestConsecutive(int arr[], int n)
 
     return longest;
 }
+
+int main()
+{
+    int arr[] = {100, 4, 200, 1, 3, 2};
+    int n = 6;
+
+    cout << "Longest consecutive sequence = "
+         << longestConsecutive(arr, n);
+
+    cout << endl;
+
+    return 0;
+}
