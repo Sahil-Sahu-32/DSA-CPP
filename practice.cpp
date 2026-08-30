@@ -118,21 +118,38 @@ int main()
 
 // Q7
 
-int n;
-cout<< "Enter number of lines";
-cin>> n;
+// int n;
+// cout<< "Enter number of lines ";
+// cin>> n;
 
-for (int i = 0; i <n ; i++)
-{
-    for (int j = 0; j < n-i-1; j++)
-    {
-        cout<<" ";
-    }
-    for (int k = 0; k <= i; k++)
-    {
-        cout<<"*";
-    }
+// for (int i = 0; i <n ; i++)
+// {
+//     for (int j = 0; j < n-i-1; j++)
+//     {
+//         cout<<" ";
+//     }
+//     for (int k = 0; k <= i; k++)
+//     {
+//         cout<<"*";
+//     }
     
+//     cout<<"\n";
+// }
+
+
+// Q8
+
+int n;
+cout<< "Enter number of lines ";
+cin>> n;
+int num = 1;
+for (int i = 0; i < n ; i++)
+{
+    for (int j = 0; j < i+1 ; j++)
+    {
+        cout<<num<<" ";
+        num++;
+    }
     cout<<"\n";
 }
 
