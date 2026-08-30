@@ -75,18 +75,71 @@ int main()
 
 // Q5
 
+// int n;
+// cout<< "Enter number of lines";
+// cin>> n;
+// char character = 'A';
+// for(int i= 1; i<=n; i++){
+
+//     for (int j = 0; j < i; j++)
+//     {
+//         cout<< character <<" " ;
+//         character++;
+//     }
+//     cout<< "\n";
+// }
+
+
+
+//  Q6
+
+// int n;
+// cout<< "Enter number of lines";
+// cin>> n;
+
+// for(int i= 1; i<=n; i++){
+
+//     cout<< "*";
+
+//     for (int j = 1; j <= n-1; j++)
+//     {
+//         if (i == 1 || i == n)
+//         {
+//             cout<<"*";
+//         }else{
+//             cout<<" ";
+//         }
+        
+//     }
+//      cout<<"*"<<"\n";
+// }
+
+
+
+// Q7
+
 int n;
 cout<< "Enter number of lines";
 cin>> n;
-char character = 'A';
-for(int i= 1; i<=n; i++){
 
-    for (int j = 0; j < i; j++)
+for (int i = 0; i <n ; i++)
+{
+    for (int j = 0; j < n-i-1; j++)
     {
-        cout<< character <<" " ;
-        character++;
+        cout<<" ";
     }
-    cout<< "\n";
+    for (int k = 0; k <= i; k++)
+    {
+        cout<<"*";
+    }
+    
+    cout<<"\n";
 }
+
+
+
+
+
+
     return 0;
 }
