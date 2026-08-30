@@ -195,45 +195,64 @@ int main()
 
 //  Q10
 
+// int n;
+// cout<< "Enter number of lines ";
+// cin>> n;
+
+// // First half
+// for(int i = n; i >= 1; i--){
+     
+//     for (int j = 0; j <= n-i; j++)
+//     {
+//         cout<<"*";
+//     }
+//     for (int k = 0; k <2*i-2 ; k++)
+//     {
+//         cout<<" ";
+//     }
+//     for (int h = 0; h <= n-i; h++)
+//     {
+//         cout<<"*";
+//     }
+//     cout<<"\n";
+// }
+
+// // Second half
+// for (int i = 0; i <n ; i++)
+// {
+//     for (int j = 0; j < n-i ; j++)
+//     {
+//         cout<<"*";
+//     }
+//     for (int k = 0; k < 2*i ; k++)
+//     {
+//         cout<<" ";
+//     }
+//     for (int h = 0; h <n-i ; h++)
+//     {
+//         cout<<"*";
+//     }
+//     cout<<"\n";
+// }
+
+
+// Q11
+
 int n;
 cout<< "Enter number of lines ";
 cin>> n;
 
-// First half
-for(int i = n; i >= 1; i--){
-     
-    for (int j = 0; j <= n-i; j++)
+bool val = true;
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j <= i; j++)
     {
-        cout<<"*";
-    }
-    for (int k = 0; k <2*i-2 ; k++)
-    {
-        cout<<" ";
-    }
-    for (int h = 0; h <= n-i; h++)
-    {
-        cout<<"*";
+        cout<< val <<" ";
+        val = !val;
     }
     cout<<"\n";
 }
 
-// Second half
-for (int i = 0; i <n ; i++)
-{
-    for (int j = 0; j < n-i ; j++)
-    {
-        cout<<"*";
-    }
-    for (int k = 0; k < 2*i ; k++)
-    {
-        cout<<" ";
-    }
-    for (int h = 0; h <n-i ; h++)
-    {
-        cout<<"*";
-    }
-    cout<<"\n";
-}
 
 
     return 0;
