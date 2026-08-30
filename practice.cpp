@@ -139,16 +139,55 @@ int main()
 
 // Q8
 
+// int n;
+// cout<< "Enter number of lines ";
+// cin>> n;
+// int num = 1;
+// for (int i = 0; i < n ; i++)
+// {
+//     for (int j = 0; j < i+1 ; j++)
+//     {
+//         cout<<num<<" ";
+//         num++;
+//     }
+//     cout<<"\n";
+// }
+
+
+
+// Q9
+
 int n;
 cout<< "Enter number of lines ";
 cin>> n;
-int num = 1;
-for (int i = 0; i < n ; i++)
+
+
+// For first triangle
+
+for (int i = 1; i <= n; i++)
 {
-    for (int j = 0; j < i+1 ; j++)
+    for (int j = 0; j <= n-i-1; j++)
     {
-        cout<<num<<" ";
-        num++;
+        cout<<" ";
+    }
+    for (int k = 0; k <2*i-1 ; k++)
+    {
+     cout<< "*";   
+    }
+    cout<<"\n";
+}
+
+// For second triangle
+
+for (int i = n; i >= 1; i--)
+{
+    for (int j = 1; j <=n-i ; j++)
+    {
+        cout<<" ";
+    }
+    for (int k = 1; k <= 2*i-1  ; k++)
+    {
+        cout<< "*";
     }
     cout<<"\n";
 }
