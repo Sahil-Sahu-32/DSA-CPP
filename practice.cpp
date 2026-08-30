@@ -256,19 +256,46 @@ int main()
 
 // Q12
 
+// int n;
+// cout<< "Enter number of lines ";
+// cin>> n;
+
+// for (int i = 0; i < n; i++)
+// {
+//     for (int j = 0; j < n-i-1 ; j++)
+//     {
+//         cout<<" ";
+//     }
+//     for (int k = 0; k < n; k++)
+//     {
+//         cout<<"*";
+//     }
+//     cout<<"\n";
+// }
+
+
+// Q13
+
 int n;
 cout<< "Enter number of lines ";
 cin>> n;
 
-for (int i = 0; i < n; i++)
+for (int i = 1; i <= n; i++)
 {
-    for (int j = 0; j < n-i-1 ; j++)
+    int value = i;
+
+    for (int j = 0; j < n-i; j++)
     {
         cout<<" ";
     }
-    for (int k = 0; k < n; k++)
+    for (int k = i; k >=1; k--)
     {
-        cout<<"*";
+        cout<<k;
+    }
+    for (int h = 2; h <=i ; h++)
+    {
+        cout<<h;
+        
     }
     cout<<"\n";
 }
