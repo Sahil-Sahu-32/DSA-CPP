@@ -238,21 +238,40 @@ int main()
 
 // Q11
 
+// int n;
+// cout<< "Enter number of lines ";
+// cin>> n;
+
+// bool val = true;
+// for (int i = 0; i < n; i++)
+// {
+//     for (int j = 0; j <= i; j++)
+//     {
+//         cout<< val <<" ";
+//         val = !val;
+//     }
+//     cout<<"\n";
+// }
+
+
+// Q12
+
 int n;
 cout<< "Enter number of lines ";
 cin>> n;
 
-bool val = true;
 for (int i = 0; i < n; i++)
 {
-    for (int j = 0; j <= i; j++)
+    for (int j = 0; j < n-i-1 ; j++)
     {
-        cout<< val <<" ";
-        val = !val;
+        cout<<" ";
+    }
+    for (int k = 0; k < n; k++)
+    {
+        cout<<"*";
     }
     cout<<"\n";
 }
-
 
 
     return 0;
