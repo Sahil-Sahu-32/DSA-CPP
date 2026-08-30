@@ -157,44 +157,83 @@ int main()
 
 // Q9
 
-int n;
-cout<< "Enter number of lines ";
-cin>> n;
+// int n;
+// cout<< "Enter number of lines ";
+// cin>> n;
 
 
 // For first triangle
 
-for (int i = 1; i <= n; i++)
-{
-    for (int j = 0; j <= n-i-1; j++)
-    {
-        cout<<" ";
-    }
-    for (int k = 0; k <2*i-1 ; k++)
-    {
-     cout<< "*";   
-    }
-    cout<<"\n";
-}
+// for (int i = 1; i <= n; i++)
+// {
+//     for (int j = 0; j <= n-i-1; j++)
+//     {
+//         cout<<" ";
+//     }
+//     for (int k = 0; k <2*i-1 ; k++)
+//     {
+//      cout<< "*";   
+//     }
+//     cout<<"\n";
+// }
 
 // For second triangle
 
-for (int i = n; i >= 1; i--)
-{
-    for (int j = 1; j <=n-i ; j++)
+// for (int i = n; i >= 1; i--)
+// {
+//     for (int j = 1; j <=n-i ; j++)
+//     {
+//         cout<<" ";
+//     }
+//     for (int k = 1; k <= 2*i-1  ; k++)
+//     {
+//         cout<< "*";
+//     }
+//     cout<<"\n";
+// }
+
+
+//  Q10
+
+int n;
+cout<< "Enter number of lines ";
+cin>> n;
+
+// First half
+for(int i = n; i >= 1; i--){
+     
+    for (int j = 0; j <= n-i; j++)
+    {
+        cout<<"*";
+    }
+    for (int k = 0; k <2*i-2 ; k++)
     {
         cout<<" ";
     }
-    for (int k = 1; k <= 2*i-1  ; k++)
+    for (int h = 0; h <= n-i; h++)
     {
-        cout<< "*";
+        cout<<"*";
     }
     cout<<"\n";
 }
 
-
-
-
+// Second half
+for (int i = 0; i <n ; i++)
+{
+    for (int j = 0; j < n-i ; j++)
+    {
+        cout<<"*";
+    }
+    for (int k = 0; k < 2*i ; k++)
+    {
+        cout<<" ";
+    }
+    for (int h = 0; h <n-i ; h++)
+    {
+        cout<<"*";
+    }
+    cout<<"\n";
+}
 
 
     return 0;
