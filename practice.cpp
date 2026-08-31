@@ -276,29 +276,29 @@ int main()
 
 // Q13
 
-int n;
-cout<< "Enter number of lines ";
-cin>> n;
+// int n;
+// cout<< "Enter number of lines ";
+// cin>> n;
 
-for (int i = 1; i <= n; i++)
-{
-    int value = i;
+// for (int i = 1; i <= n; i++)
+// {
+//     int value = i;
 
-    for (int j = 0; j < n-i; j++)
-    {
-        cout<<" ";
-    }
-    for (int k = i; k >=1; k--)
-    {
-        cout<<k;
-    }
-    for (int h = 2; h <=i ; h++)
-    {
-        cout<<h;
+//     for (int j = 0; j < n-i; j++)
+//     {
+//         cout<<" ";
+//     }
+//     for (int k = i; k >=1; k--)
+//     {
+//         cout<<k;
+//     }
+//     for (int h = 2; h <=i ; h++)
+//     {
+//         cout<<h;
         
-    }
-    cout<<"\n";
-}
+//     }
+//     cout<<"\n";
+// }
 
 
     return 0;
