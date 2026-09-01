@@ -35,3 +35,14 @@ int longestZeroSumSubarray(vector<int>& arr) {
     return maxLength;
 }
 
+int main() {
+
+    vector<int> arr = {
+        15, -2, 2, -8, 1, 7, 10, 23
+    };
+
+    cout << "Longest zero-sum subarray length: "
+         << longestZeroSumSubarray(arr);
+
+    return 0;
+}
