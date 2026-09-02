@@ -24,3 +24,13 @@ int maxProduct(vector<int>& arr) {
     return ans;
 }
 
+int main() {
+
+    vector<int> arr = {2, 3, -2, 4};
+
+    cout << maxProduct(arr);
+
+    cout << endl;
+
+    return 0;
+}
