@@ -32,6 +32,16 @@ void findSubsequences(int arr[], int n, int index,
 }
 
 int main() {
+    
+ int arr[] = {1, 2, 1};
+    int n = 3;
 
+    int target = 2;
+
+    vector<int> current;
+
+    findSubsequences(arr, n, 0, target, current);
+
+    return 0;
    
 }
