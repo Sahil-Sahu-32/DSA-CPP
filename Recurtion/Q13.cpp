@@ -31,3 +31,7 @@ void findSubsequences(int arr[], int n, int index,
                       target, current);
 }
 
+int main() {
+
+   
+}
