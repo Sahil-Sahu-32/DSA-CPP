@@ -31,5 +31,9 @@ void generate(string current,
 
 int main() {
 
-    
+    int n = 3;
+
+    generate("", 0, 0, n);
+
+    return 0;
 }
