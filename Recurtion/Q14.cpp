@@ -29,3 +29,7 @@ void generate(string current,
     }
 }
 
+int main() {
+
+    
+}
