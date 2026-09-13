@@ -41,3 +41,6 @@ bool search(vector<vector<char>>& board,
     return found;
 }
 
+int main() {
+
+}
