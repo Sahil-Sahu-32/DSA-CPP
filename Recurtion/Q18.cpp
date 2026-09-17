@@ -87,7 +87,14 @@ int main() {
 
     solveSudoku(board);
 
-   
+    for (auto row : board) {
+
+        for (int x : row) {
+            cout << x << " ";
+        }
+
+        cout << endl;
+    }
 
     return 0;
 }
