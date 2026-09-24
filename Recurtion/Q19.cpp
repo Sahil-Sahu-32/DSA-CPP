@@ -69,6 +69,7 @@ void solve(vector<string>& board,
 }
 // nothing to change in main function
 // still nothing changes 
+// nothing
 int main() {
 
     int n = 4;
