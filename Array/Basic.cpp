@@ -10,6 +10,6 @@ int main(){
         cout<< nums[i]<<"\n";
     }
     
-
+// nothing 
     return 0;
 }
